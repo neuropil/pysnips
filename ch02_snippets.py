@@ -33,14 +33,14 @@ def get_counts(sequence):
 from collections import defaultdict
 def get_counts2(sequence):
     counts = defaultdict(int) # values will initialize to 0
-    for x in sequnce:
+    for x in sequence:
         counts[x] += 1
     return counts    
 
 # now we can tests our functions
 counts = get_counts(time_zones)
 counts['America/New_York']
-counts2 = get_counts(time_zones)
+counts2 = get_counts2(time_zones)
 counts2['America/New_York']
 len(time_zones)
 
